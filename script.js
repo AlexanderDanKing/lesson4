@@ -79,22 +79,15 @@ let money, time, appData;
             appData.income = items.split(", ");
             appData.income.push(prompt("Может что-то еще?"));
             appData.income.sort();  
-            for (let i = 1; i < appData.income.length; i++) {
+            let k = 1;
             appData.income.forEach(function (item) {
-                alert("Способы доп. заработка: " + i + ": " + item);
+                alert("Способы доп. заработка: " + k + ": " + item);
+                k++;
             });
         }
-        }
+        
      };
-
-                //   for (let i = 0; i < arr.length; i++) {
-                //           console.log(arr[i]);
-                //          }
-    
-                //        arr.forEach(function(item, i, mass) {
-                //       console.log(i + ": " + item + " (массив: " + mass + ")");
-                //      });
-
+     
 for (let key in appData) {
     console.log("Наша программа включает в себя данные: " + key + ": " + appData[key]);
 }
